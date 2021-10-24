@@ -1,0 +1,42 @@
+.IntroWrapper{
+    background-repeat: no-repeat;
+    background-image: url('../../Pictures/klau_sit.JPG');
+    background-position: top;
+    width:100%;
+    height: 700px;
+    background-size:cover;
+    color: #fff;
+    font-size:50px;
+}
+
+.Intro{
+    padding-left: 8%;
+    padding-top: 30%;
+}
+
+#citation{
+    font-size: 2.7vw;
+    padding-left: 40px;
+    font-style: italic;
+}
+
+@media screen and (max-width: 960px){
+    .IntroWrapper{
+        background-repeat: no-repeat;
+        background-image: url('../../Pictures/klau_sit.JPG');
+        background-position: top;
+        width:100%;
+        height: 700px;
+        background-size:cover;
+        color: #fff;
+        font-size:40px;
+    }
+    .Intro{
+        padding-top: 50%;
+        font-size: 5vw;
+    }
+
+    #citation{
+        font-size: 3.4vw;
+    }
+}

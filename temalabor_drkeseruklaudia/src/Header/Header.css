@@ -1,0 +1,188 @@
+#logo{
+    display: block;
+    display: block;
+    align-self: center;
+    height: 70px;
+    border-radius: 10px;
+    padding: 2px;
+    background: #cccccc;
+    background: -moz-linear-gradient(left,  #cccccc 0%, #eeeeee 100%);
+    background: -webkit-linear-gradient(left,  #cccccc 0%,#eeeeee 100%);
+    background: linear-gradient(to right,  #cccccc 0%,#eeeeee 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#eeeeee',GradientType=1 );
+}
+
+.NavbarItems{
+    background: linear-gradient(90deg,#865538 0%, #DAA06D 100%);
+    height: 85px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.nav-menu{
+    display: grid;
+    grid-template-columns: repeat(7,auto);
+    grid-gap: 5px;
+    list-style: none;
+    /*55:56*/
+    text-align: center;
+    width: 70vw;
+    justify-content: end;
+    margin-right: 2rem;
+}
+
+.nav-links{
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+#routeLink{
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+#routeLink:hover{
+    background-color:#f0ebe7;
+    color: rgb(196, 134, 93);
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+}
+
+/*glass like hover on social media icons*/
+.nav-links:hover{
+    background-color:#f0ebe7;
+    color: rgb(196, 134, 93);
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+}
+
+.fa-bars{
+    color:#fff;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.nav-btn{
+    text-align: center;
+    justify-content: center;
+    display: table;
+    vertical-align: middle;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
+.nav-btn:hover{
+    text-align: center;
+    justify-content: center;
+    display: table;
+    vertical-align: middle;
+    border-radius: 4px;
+    margin-left: 5px;
+    opacity: 0.6;
+    transition: all 0.2s ease-out;
+}
+
+#ger{
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 960px){
+
+    
+    #ger{
+        margin-left: 5px;
+    }
+
+    .nav-btn{
+        text-align: center;
+        padding: 2rem;
+        padding-left: 46%;
+        padding-right: 46%;
+        display: table;
+        vertical-align: middle;
+        background:linear-gradient(90deg,#865538 0%, #DAA06D 100%);
+    }
+
+    .nav-btn:hover{
+        text-align: center;
+        padding: 2rem;
+        padding-left: 46%;
+        padding-right: 46%;
+        display: table;
+        vertical-align: middle;
+        background:rgb(214, 105, 55);
+        opacity: 1;
+    }
+
+    .menu-icon{
+        display: flex;
+    }
+
+    .NavbarItems{
+        position: relative;
+    }
+
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 700px;
+        position: absolute;
+        top: 65px;
+        left:-130%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .nav-menu.active{
+        background: linear-gradient(90deg,#865538 0%, #DAA06D 100%);
+        left: -40px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+
+    .nav-links{
+        text-align: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        width: 96.5%;
+        display: table;
+        vertical-align: middle;
+        background:linear-gradient(90deg,#865538 0%, #DAA06D 100%);
+    }
+
+    .nav-links:hover{
+        background: rgb(214, 105, 55);
+        border-radius: 0;
+        color: white;
+    }
+
+    .Navbar-logo{
+        position: absolute;
+        top:0;
+        left:0;
+        transform: translate(20%,-30%);
+    }
+
+    .menu-icon{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    .fa-times{
+        color: #fff;
+        font-size: 2rem;
+    }
+}

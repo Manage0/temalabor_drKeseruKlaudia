@@ -1,0 +1,12 @@
+#ImpSec{
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: white;
+    background: #6689dd;
+    background: -moz-linear-gradient(top,  #6689dd 0%, #0082e5 100%);
+    background: -webkit-linear-gradient(top,  #6689dd 0%,#0082e5 100%);
+    background: linear-gradient(to bottom,  #6689dd 0%,#0082e5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6689dd', endColorstr='#0082e5',GradientType=0 );
+
+}

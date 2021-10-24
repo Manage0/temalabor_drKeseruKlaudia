@@ -1,0 +1,89 @@
+#CV{
+    background: #885739;
+    background: -moz-linear-gradient(top,  #885739 0%, #7db9e8 100%);
+    background: -webkit-linear-gradient(top,  #885739 0%,#7db9e8 100%);
+    background: linear-gradient(to bottom,  #885739 0%,#7db9e8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#885739', endColorstr='#7db9e8',GradientType=0 );       
+}
+
+.CVHeader{
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    height: max-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.imgNotWorking{
+    background-image: url('../../Pictures/Temp/introImg.jpg');
+    width: 400px;
+    height: 600px;
+}
+
+#left{
+    float: right;
+    margin-left: auto;
+    width: 40%;
+}
+
+#right{
+    float: right;
+    width:50%;
+    margin-right: auto;
+    font-size: 1.4vw;
+    color: white;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    text-align: justify;
+    padding-right: 30px;
+}
+
+#table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#red_dress{
+    height: 700px;
+    border-radius: 50px;
+}
+
+#red_dress_mobile{
+    display: none;
+}
+
+@media screen and (max-width: 960px){
+    #red_dress{
+        display: none;
+    }
+    
+    .CVHeader{
+        font-size: 5vw;
+    }
+
+    #red_dress_mobile{
+        display: block;
+        height: 600px;
+        border-radius: 50px;
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #right{
+        width:100%;
+        font-size: 2.5vw;
+        padding: 30px;
+        padding-right: 0;
+        margin-left: 10px;
+
+    }
+    #left{
+
+        display: none;
+        float: right;
+        margin-left: auto;
+        width: 40%;
+    }
+}
