@@ -1,6 +1,5 @@
 #logo{
     display: block;
-    display: block;
     align-self: center;
     height: 70px;
     border-radius: 10px;
@@ -13,12 +12,18 @@
 }
 
 .NavbarItems{
-    background: linear-gradient(90deg,#865538 0%, #DAA06D 100%);
+    opacity: 1;
+    background: transparent;
     height: 85px;
     display:flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
+    border-bottom: 1px black solid;
+}
+
+#HeaderBG{
+    background: rgba(175, 107, 29, 0.5)
 }
 
 .nav-menu{
@@ -122,6 +127,7 @@
 
     .menu-icon{
         display: flex;
+        color: white;
     }
 
     .NavbarItems{

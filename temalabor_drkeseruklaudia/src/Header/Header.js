@@ -1,34 +1,36 @@
-import"./Header.css"
+import "./Header.css"
 import React, { useEffect, useState, useContext } from 'react'
-import {MenuItems} from './MenuItems'
+import { MenuItems } from './MenuItems'
 import { LangContext, useLang } from "../Contexts/LangContext"
 import { HashLink as Link } from "react-router-hash-link"
+import { FaBars } from 'react-icons/fa'
+import { AiFillCloseCircle } from 'react-icons/ai'
 
 
-const Header = (fun)=>{
+const Header = (fun) => {
 
     //bővítés a többi elemmel
 
     const [lang, setLangHun, setLangDeu] = useLang(useLang);
 
-    const [clicked, setClicked]= useState(false)
+    const [clicked, setClicked] = useState(false)
 
-    const ClickSet=()=>{
+    const ClickSet = () => {
         setClicked(!clicked)
     }
 
-    const Deu =()=>{
+    const Deu = () => {
         setLangDeu()
     }
-    
-    const Hun =()=>{
+
+    const Hun = () => {
         setLangHun()
     }
 
-    const [url, setURL]=useState()
+    const [url, setURL] = useState()
 
-    useEffect(()=>{
-        if(window.location.href!=url){
+    useEffect(() => {
+        if (window.location.href != url) {
             setClicked(false)
             setURL(window.location.href)
         }
@@ -44,40 +46,43 @@ const Header = (fun)=>{
                 <span>dr. Klaudia Keserű</span>}
     */
 
-    return(
-        <nav className="NavbarItems">
-            <h1 className="Navbar-logo">
-                <Link to="/"><img src="Images/LogoBg2.png" alt="logo" id="logo"/></Link>
-            </h1>
-            <div className="menu-icon" onClick={ClickSet}>
-                <i className={clicked?"fas fa-times":"fas fa-bars"}></i>
-            </div>
-            <ul className={clicked?'nav-menu active':'nav-menu'}>
-                {MenuItems.map((item, index)=>{
-                    return(
-                        <li key={index}>
-                            {
-                                item.cName==='nav-links'
-                                ?
-                                <Link className={item.cName} to={item.url}>
-                                    {lang==="hun"
-                                    ?
-                                    <span>{item.title}</span>
-                                    :
-                                    <span>{item.titledeu}</span>}                
-                                </Link>
-                                :
-                                item.title==='Hun'
-                                ?
-                                <img class={item.cName} src="Images/Flags/hunFlag.png" alt="hun" onClick={Hun} />
-                                :
-                                <img className={item.cName} id="ger" src="Images/Flags/gerFlag.png" alt="ger" onClick={Deu}/>
-                            }
-                        </li>
-                    )
-                })}
-            </ul>
-        </nav>
+    return (
+        <div id="HeaderBG">
+            <nav className="NavbarItems">
+                <h1 className="Navbar-logo">
+                    <Link to="/"><img src="Images/LogoBg2.png" alt="logo" id="logo" /></Link>
+                </h1>
+                <div className="menu-icon" onClick={ClickSet}>
+                    {clicked ? <AiFillCloseCircle /> : <FaBars />}
+                </div>
+                <ul className={clicked ? 'nav-menu active' : 'nav-menu'}>
+                    {MenuItems.map((item, index) => {
+                        return (
+                            <li key={index}>
+                                {
+                                    item.cName === 'nav-links'
+                                        ?
+                                        <Link className={item.cName} to={item.url}>
+                                            {lang === "hun"
+                                                ?
+                                                <span>{item.title}</span>
+                                                :
+                                                <span>{item.titledeu}</span>}
+                                        </Link>
+                                        :
+                                        item.title === 'Hun'
+                                            ?
+                                            <img class={item.cName} src="Images/Flags/hunFlag.png" alt="hun" onClick={Hun} />
+                                            :
+                                            <img className={item.cName} id="ger" src="Images/Flags/gerFlag.png" alt="ger" onClick={Deu} />
+                                }
+                            </li>
+                        )
+                    })}
+                </ul>
+            </nav>
+        </div>
+
     )
 }
 

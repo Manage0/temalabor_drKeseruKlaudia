@@ -1,7 +1,5 @@
 import './ServicesSection.css'
 import { useLang } from '../../Contexts/LangContext'
-import { useEffect } from 'react'
-import './Services.scss'
 
 const ServicesSection = () => {
 

@@ -27,7 +27,6 @@ function App() {
         <Router>
           <Switch>
             <Route exact path="/">
-              <Header fun={Render} />
               <IntroSection/>
               <CVSection/>
               <HIW/>
