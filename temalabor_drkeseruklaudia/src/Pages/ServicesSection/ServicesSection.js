@@ -3,97 +3,12 @@ import { useLang } from '../../Contexts/LangContext'
 import { useEffect } from 'react'
 import './Services.scss'
 
-
-const panels = document.querySelectorAll('.info-panel.wrapper');
-  
-const togglePanel = function(dropdown, panel) {
-    dropdown.classList.toggle('open');
-    panel.classList.toggle('open');
-  };
-  
-
-  
-    const rotateIcon = function(icon) {
-      icon.classList.toggle('rotate');
-    };
-
-
-
-    function getPanel(){
-        console.log("getPanel")
-      panels.forEach(function(panel) {
-        let panelObj = createPanel(panel);
-        panelObj.panel.addEventListener('click', function() {
-          panelObj.handle_click_event();
-        })
-      })
-    };
-
-    function createPanel(_panel) {
-        console.log("createPanel")
-      function Panel() {
-        
-        this.panel = _panel;
-        this.icon = _panel.querySelector('.info-panel.icon');
-        this.dropdown = _panel.querySelector('.info-panel.dropdown');
-        this.handle_click_event = function() {
-          rotateIcon(this.icon)
-          togglePanel(this.dropdown, this.panel)
-        }
-        
-        return this;
-      };
-      return new Panel(_panel)
-    };
-
-
-
 const ServicesSection = () => {
 
     const [lang] = useLang(useLang)
 
-    useEffect(() => {
-        console.log("useEffect")
-        getPanel()
-    });
-
     return (
         <div id="Services">
-
-  
-  <ol class="info-panel">
-
-    <li class="info-panel wrapper" data-number="01">
-      <h2 class="info-panel heading"><span class="info-panel icon" onClick={()=>getPanel()}></span>Focus on maintaining an effective base into contact.</h2>
-      <div class="info-panel dropdown">
-        <p>You've got to keep your toes pointed and your heals together.</p>
-        <p>If you want to look good while taking an opponent downtown.</p>
-      </div>
-    </li>
-
-    <li class="info-panel wrapper" data-number="02">
-      <h2 class="info-panel heading"><span class="info-panel icon"></span>Emphasis on making primary contact with a Near Shoulder Strike and Punch.</h2>
-      <div class="info-panel dropdown">
-        <p>You've got to keep your toes pointed and your heals together.</p>
-        <p>If you want to look good while taking an opponent downtown.</p>
-      </div>
-    </li>
-
-    <li class="info-panel wrapper" data-number="03">
-      <h2 class="info-panel heading"><span class="info-panel icon"></span>Executing an effective Wrap through contact.</h2>
-      <div class="info-panel dropdown">
-        <p>You've got to keep your toes pointed and your heals together.</p>
-        <p>If you want to look good while taking an opponent downtown.</p>
-      </div>
-    </li>
-
-  </ol>
-
-
-
-
-
-
             {lang === "hun" ?
                 <div class="ServicesHeader">
                     Szakterületeim
