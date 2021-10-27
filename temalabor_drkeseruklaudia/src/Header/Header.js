@@ -50,7 +50,7 @@ const Header = (fun) => {
         <div id="HeaderBG">
             <nav className="NavbarItems">
                 <h1 className="Navbar-logo">
-                    <Link to="/"><img src="Images/LogoBg2.png" alt="logo" id="logo" /></Link>
+                    <Link to="/"><img src="Images/Logo.webp" alt="logo" id="logo" /></Link>
                 </h1>
                 <div className="menu-icon" onClick={ClickSet}>
                     {clicked ? <AiFillCloseCircle /> : <FaBars />}
