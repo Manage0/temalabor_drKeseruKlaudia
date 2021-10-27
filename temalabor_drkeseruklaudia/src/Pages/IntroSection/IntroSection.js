@@ -25,6 +25,8 @@ const IntroSection =()=>{
             </div>
         </div>
     )
+
+    //blur on he bottom of pic
 }
 
 export default IntroSection

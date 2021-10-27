@@ -10,7 +10,7 @@ const HIW = () => {
     return (
         <div id="HIW">
             {lang === "hun" ?
-                <div id="title">
+                <div id="title" style={{"color": "black"}}>
                     Hogyan dolgozom?
                 </div> : <div id="title">
                     Wie arbeite ich?
@@ -19,9 +19,9 @@ const HIW = () => {
                 <VerticalTimeline>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
-                        contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                        contentStyle={{ background: 'rgb(127, 123, 103)', color: '#fff' }}
                         contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                        iconStyle={{ background: 'rgb(196, 153, 88)', color: '#fff' }}
                         icon={<div class="number">1</div>}
                     >
                         <h3 className="vertical-timeline-element-title">Időpont egyeztetés:</h3>
