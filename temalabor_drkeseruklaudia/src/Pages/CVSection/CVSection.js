@@ -16,7 +16,7 @@ const CVSection = () => {
         <div id='CV'>
                 <div class='CVHeader'>
             {lang === "hun" ?
-                    "Magamról" :"Vorstellung" }
+                    "Bemutatkozás" :"Vorstellung" }
                 </div> :
                 
             {lang === "hun" ?

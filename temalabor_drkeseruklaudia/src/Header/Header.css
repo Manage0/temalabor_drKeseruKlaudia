@@ -4,11 +4,6 @@
     height: 70px;
     border-radius: 10px;
     padding: 2px;
-    background: #cccccc;
-    background: -moz-linear-gradient(left,  #cccccc 0%, #eeeeee 100%);
-    background: -webkit-linear-gradient(left,  #cccccc 0%,#eeeeee 100%);
-    background: linear-gradient(to right,  #cccccc 0%,#eeeeee 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#eeeeee',GradientType=1 );
 }
 
 .NavbarItems{
@@ -23,7 +18,12 @@
 }
 
 #HeaderBG{
-    background: rgba(175, 107, 29, 0.5)
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(230,184,157,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(230,184,157,1) 100%);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(230,184,157,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#e6b89d",GradientType=1); 
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#808080",GradientType=1); 
 }
 
 .nav-menu{
@@ -39,7 +39,7 @@
 }
 
 .nav-links{
-    color: white;
+    color: black;
     text-decoration: none;
     padding: 0.5rem 1rem;
 }
@@ -51,16 +51,20 @@
 }
 
 #routeLink:hover{
-    background-color:#f0ebe7;
-    color: rgb(196, 134, 93);
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(128,128,128,0.49631190366771705) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(128,128,128,0.49631190366771705) 100%);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(128,128,128,0.49631190366771705) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#808080",GradientType=1); 
+    color: black;
     border-radius: 4px;
     transition: all 0.2s ease-out;
 }
 
 /*glass like hover on social media icons*/
 .nav-links:hover{
-    background-color:#f0ebe7;
-    color: rgb(196, 134, 93);
+    background: rgb(255,255,255);
+    color: black;
     border-radius: 4px;
     transition: all 0.2s ease-out;
 }
@@ -111,7 +115,7 @@
         padding-right: 46%;
         display: table;
         vertical-align: middle;
-        background:linear-gradient(90deg,#865538 0%, #DAA06D 100%);
+        background-color: transparent;
     }
 
     .nav-btn:hover{
@@ -121,13 +125,13 @@
         padding-right: 46%;
         display: table;
         vertical-align: middle;
-        background:rgb(214, 105, 55);
+        background:white;
         opacity: 1;
     }
 
     .menu-icon{
         display: flex;
-        color: white;
+        color: black;
     }
 
     .NavbarItems{
@@ -147,7 +151,11 @@
     }
 
     .nav-menu.active{
-        background: linear-gradient(90deg,#865538 0%, #DAA06D 100%);
+        background: rgb(255,255,255);
+        background: -moz-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(230,184,157,0.9) 100%);
+        background: -webkit-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(230,184,157,0.9) 100%);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(230,184,157,0.9) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#e6b89d",GradientType=1); 
         left: -40px;
         opacity: 1;
         transition: all 0.5s ease;
@@ -161,13 +169,13 @@
         width: 96.5%;
         display: table;
         vertical-align: middle;
-        background:linear-gradient(90deg,#865538 0%, #DAA06D 100%);
+        background:transparent;
     }
 
     .nav-links:hover{
-        background: rgb(214, 105, 55);
+        background: #fff;
         border-radius: 0;
-        color: white;
+        color: black;
     }
 
     .Navbar-logo{

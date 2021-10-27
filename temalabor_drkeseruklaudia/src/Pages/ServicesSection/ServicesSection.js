@@ -1,10 +1,27 @@
 import './ServicesSection.css'
 import { useLang } from '../../Contexts/LangContext'
+import { useState } from "react"
+import { css, keyframes } from "styled-components/macro"
+import { AnimatePresence } from "framer-motion"
 
 const ServicesSection = () => {
 
     const [lang] = useLang(useLang)
 
+    const [hiddenP, setHiddenP] = useState(true)
+    const [hiddenC, setHiddenC] = useState(true)
+    const [hiddenG, setHiddenG] = useState(true)
+    const [hiddenT, setHiddenT] = useState(true)
+    const [hiddenB, setHiddenB] = useState(true)
+
+    const appear = keyframes`
+    0%{
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  `
     return (
         <div id="Services">
             {lang === "hun" ?
@@ -17,99 +34,234 @@ const ServicesSection = () => {
             {lang === "hun" ?
                 <div id="ServicesGrid">
                     <div className="card">
-                        <div class="elementTitle">
+                        <div class="elementTitle" onClick={() => setHiddenP(!hiddenP)}>
                             Polgári jog
                         </div>
-                        <ul >
-                            <li>
-                                Peres és peren kívül képviselet
-                            </li>
-                            <li>
-                                Tanácsadás a polgári jog teljes területén
-                            </li>
-                            <li>
-                                Okiratok szerkesztése és véleményezése magyar illetve német nyelven
-                            </li>
-                            <li>
-                                Beadványok készítése
-                            </li>
-                        </ul>
+                        <AnimatePresence initial={false}>
+                            {!hiddenP && (
+                                <ul
+                                    css={css`
+                                            animation: ${appear} 1s linear;
+                                            animation-direction: normal;
+                                            animation-iteration-count: 1;
+                                            overflow: hidden;
+                                        `}
+                                >
+                                    <li
+                                        css={css`
+                            animation: ${appear} 1s linear;
+                            `}
+                                    >
+                                        Peres és peren kívül képviselet
+                                    </li>
+                                    <li
+                                        css={css`
+                            animation: ${appear} 1s linear;
+                            `}
+                                    >
+                                        Tanácsadás a polgári jog teljes területén
+                                    </li>
+                                    <li
+                                        css={css`
+                            animation: ${appear} 1s linear;
+                            `}
+                                    >
+                                        Okiratok szerkesztése és véleményezése magyar, illetve német nyelven
+                                    </li>
+                                    <li
+                                        css={css`
+                            animation: ${appear} 1s linear;
+                            `}
+                                    >
+                                        Beadványok készítése
+                                    </li>
+                                </ul>
+                            )}
+                        </AnimatePresence>
                     </div>
                     <div className="card">
-                        <div class="elementTitle">
+                        <div class="elementTitle" onClick={() => setHiddenC(!hiddenC)}>
                             Családi jog
                         </div>
-                        <ul>
-                            <li>
-                                Családjogi ügyekben peres és peren kívüli képviselet
-                            </li>
-                            <li>
-                                Tanácsadás a családi jog teljes területén
-                            </li>
-                            <li>
-                                Okiratok szerkesztése és véleményezése magyar illetve német nyelven
-                            </li>
-                            <li>
-                                Beadványok készítése
-                            </li>
-                        </ul>
+                        <AnimatePresence initial={false}>
+                            {!hiddenC && (
+                                <ul
+                                    css={css`
+                                            animation: ${appear} 1s linear;
+                                            animation-direction: normal;
+                                            animation-iteration-count: 1;
+                                            overflow: hidden;
+                                        `}
+                                >
+                                    <li
+                                        css={css`
+                            animation: ${appear} 1s linear;
+                            `}
+                                    >
+                                        Peres és peren kívül képviselet
+                                    </li>
+                                    <li
+                                        css={css`
+                            animation: ${appear} 1s linear;
+                            `}
+                                    >
+                                        Tanácsadás a polgári jog teljes területén
+                                    </li>
+                                    <li
+                                        css={css`
+                            animation: ${appear} 1s linear;
+                            `}
+                                    >
+                                        Okiratok szerkesztése és véleményezése magyar, illetve német nyelven
+                                    </li>
+                                    <li
+                                        css={css`
+                            animation: ${appear} 1s linear;
+                            `}
+                                    >
+                                        Beadványok készítése
+                                    </li>
+                                </ul>
+                            )}
+                        </AnimatePresence>
                     </div>
                     <div className="card">
-                        <div class="elementTitle">
+                        <div class="elementTitle" onClick={() => setHiddenG(!hiddenG)}>
                             Gazdasági jog
                         </div>
-                        <ul>
-                            <li>
-                                Gazdasági társaságok alapítása, alapító okiratok, társasági szerződések módosítása
-                            </li>
-                            <li>
-                                Gazdasági társaságok egyesülésének, szétválásának, kiválásának, stb. jogi ügyintézése
-                            </li>
-                            <li>
-                                Peres és peren kívüli képviselet
-                            </li>
-                            <li>
-                                Tanácsadás a gazdasági jog teljes területén
-                            </li>
-                            <li>
-                                Gazdasági társaságok felszámolásának, végelszámolásának jogi ügyintézése
-                            </li>
-                        </ul>
+                        <AnimatePresence initial={false}>
+                            {!hiddenG && (
+                                <ul
+                                    css={css`
+                                            animation: ${appear} 1s linear;
+                                            animation-direction: normal;
+                                            animation-iteration-count: 1;
+                                            overflow: hidden;
+                                        `}
+                                >
+                                    <li
+                                        css={css`
+                            animation: ${appear} 1s linear;
+                            `}
+                                    >
+                                        Gazdasági társaságok alapítása, alapító okiratok, társasági szerződések módosítása
+                                    </li>
+                                    <li
+                                        css={css`
+                            animation: ${appear} 1s linear;
+                            `}
+                                    >
+                                        Gazdasági társaságok egyesülésének, szétválásának, kiválásának, stb. jogi ügyintézése
+                                    </li>
+                                    <li
+                                        css={css`
+                            animation: ${appear} 1s linear;
+                            `}
+                                    >
+                                        Peres és peren kívüli képviselet
+                                    </li>
+                                    <li
+                                        css={css`
+                            animation: ${appear} 1s linear;
+                            `}
+                                    >
+                                        Tanácsadás a gazdasági jog teljes területén
+                                    </li>
+                                    <li
+                                        css={css`
+                            animation: ${appear} 1s linear;
+                            `}
+                                    >
+                                        Gazdasági társaságok felszámolásának, végelszámolásának jogi ügyintézése
+                                    </li>
+                                </ul>
+                            )}
+                        </AnimatePresence>
                     </div>
                     <div className="card">
-                        <div class="elementTitle">
+                        <div class="elementTitle" onClick={() => setHiddenT(!hiddenT)}>
                             Társadalmi szervezetek
                         </div>
-                        <ul>
-                            <li>
-                                Peres és peren kívüli képviselet
-                            </li>
-                            <li>
+                        <AnimatePresence initial={false}>
+                            {!hiddenT && (
+                                <ul
+                                    css={css`
+                                            animation: ${appear} 1s linear;
+                                            animation-direction: normal;
+                                            animation-iteration-count: 1;
+                                            overflow: hidden;
+                                        `}
+                                >
+                                    <li
+                                        css={css`
+                            animation: ${appear} 1s linear;
+                            `}
+                                    >
                                 Társadalmi szervezetek alapítása, okiratok készítése, azok módosítása
-                            </li>
-                            <li>
+                                    </li>
+                                    <li
+                                        css={css`
+                            animation: ${appear} 1s linear;
+                            `}
+                                    >
+                                        Peres és peren kívüli képviselet
+                                    </li>
+                                    <li
+                                        css={css`
+                            animation: ${appear} 1s linear;
+                            `}
+                                    >
                                 Közgyűlések levezetése
-                            </li>
-                            <li>
+                                    </li>
+                                    <li
+                                        css={css`
+                            animation: ${appear} 1s linear;
+                            `}
+                                    >
                                 Közreműködés közhasznú és kiemelten közhasznú minősítés megszerzésében
-                            </li>
-                        </ul>
+                                    </li>
+                                </ul>
+                            )}
+                        </AnimatePresence>
                     </div>
                     <div className="card">
-                        <div class="elementTitle">
+                        <div class="elementTitle" onClick={() => setHiddenB(!hiddenB)}>
                             Büntető jog
                         </div>
-                        <ul>
-                            <li>
+                        <AnimatePresence initial={false}>
+                            {!hiddenB && (
+                                <ul
+                                    css={css`
+                                            animation: ${appear} 1s linear;
+                                            animation-direction: normal;
+                                            animation-iteration-count: 1;
+                                            overflow: hidden;
+                                        `}
+                                >
+                                    <li
+                                        css={css`
+                            animation: ${appear} 1s linear;
+                            `}
+                                    >
                                 Képviselet büntető eljárásokban
-                            </li>
-                            <li>
+                                    </li>
+                                    <li
+                                        css={css`
+                            animation: ${appear} 1s linear;
+                            `}
+                                    >
                                 Beadványok és okiratok szerkesztése
-                            </li>
-                            <li>
+                                    </li>
+                                    <li
+                                        css={css`
+                            animation: ${appear} 1s linear;
+                            `}
+                                    >
                                 Tanácsadás a büntető jog teljes területén
-                            </li>
-                        </ul>
+                                    </li>
+                                </ul>
+                            )}
+                        </AnimatePresence>
                     </div>
                     <div className="card">
                         <div class="elementTitle">

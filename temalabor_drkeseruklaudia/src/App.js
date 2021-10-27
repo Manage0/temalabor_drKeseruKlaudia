@@ -27,16 +27,14 @@ function App() {
         <Router>
           <Switch>
             <Route exact path="/">
+            <Header/>
               <IntroSection/>
               <CVSection/>
+              <ServicesSection/>
               <HIW/>
               <Price/>
               <ContactSection/> 
               <ImpSec/>
-            </Route>
-            <Route path="/szakteruletek">
-              <Header fun={Render} />
-              <ServicesSection/>
             </Route>
             <Redirect to="/"/>
           </Switch>
