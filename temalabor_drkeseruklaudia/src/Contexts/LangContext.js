@@ -14,9 +14,8 @@ export const LangProvider = ({children}) =>{
         setLang("hun");
     }
 
-
-
     const contextContent = [lang, setLangHun, setLangDeu];
+    
     return <LangContext.Provider value={contextContent}>{children}</LangContext.Provider>;
 }
 
