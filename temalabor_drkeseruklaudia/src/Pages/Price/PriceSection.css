@@ -1,9 +1,9 @@
 #Price{
-    background: rgb(230,184,157);
-    background: -moz-linear-gradient(180deg, rgba(230,184,157,1) 0%, rgba(255,255,255,1) 100%);
-    background: -webkit-linear-gradient(180deg, rgba(230,184,157,1) 0%, rgba(255,255,255,1) 100%);
-    background: linear-gradient(180deg, rgba(230,184,157,1) 0%, rgba(255,255,255,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e6b89d",endColorstr="#ffffff",GradientType=1);    
+    background: rgb(222,207,198);
+    background: -moz-linear-gradient(0deg, rgba(222,207,198,1) 0%, rgba(230,184,157,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(222,207,198,1) 0%, rgba(230,184,157,1) 100%);
+    background: linear-gradient(0deg, rgba(222,207,198,1) 0%, rgba(230,184,157,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#decfc6",endColorstr="#e6b89d",GradientType=1);  
 
     padding-top: 2%;
     padding-bottom: 2%;
@@ -15,7 +15,7 @@
 #PriceTitle{
     text-align: center;
     font-size: 45px;
-    color: #fff;
+    color: black;
     padding-bottom: 2%;
     font-weight: bold;
 }
@@ -24,7 +24,7 @@
     text-align: justify;
     font-size: 22px;
     font-weight: 550;
-    color: white;
+    color: black;
 }
 
 #PriceImg{

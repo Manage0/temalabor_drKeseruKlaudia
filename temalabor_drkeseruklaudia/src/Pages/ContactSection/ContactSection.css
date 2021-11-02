@@ -1,9 +1,9 @@
 #Contact{
     background: rgb(255,255,255);
-    background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(230,184,157,1) 100%);
-    background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(230,184,157,1) 100%);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(230,184,157,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#e6b89d",GradientType=1);      
+    background: -moz-linear-gradient(180deg, rgba(222,207,198,1) 0%, rgba(230,184,157,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(222,207,198,1) 0%, rgba(230,184,157,1) 100%);
+    background: linear-gradient(180deg, rgba(222,207,198,1) 0%, rgba(230,184,157,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#decfc6",endColorstr="#e6b89d",GradientType=1);      
     
     padding-top: 70px;
     padding-bottom: 70px;
@@ -16,7 +16,9 @@
 }
 
 #formDiv{
-    background: rgba(99, 69, 43, 0.397);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border: 1px solid black;
+    background: #e6b89d;
     padding: 40px;
     border-radius: 15px;
     padding-right: 90px;
@@ -74,7 +76,7 @@
     margin-left: 4%;
     width: 100%;
     padding: 5px;
-    background-color: rgb(218, 194, 113);
+    background-color: #e4a885;
     transition: ease-out 0.3s;
     border-radius: 6px;
     font-size: 20px;
@@ -119,11 +121,8 @@
 
 #SocialMedia a{
     text-decoration:none;
-    overflow: hidden;
     padding: 5px;
     border-radius: 5px;
-    background: rgba(255, 255, 255, .1);
-    box-shadow: 0 5px 5px rgba(0,0,0,.2);
 }
 
 #SocialMedia a:hover{
@@ -134,9 +133,4 @@
     background: rgba(255, 255, 255, .1);
     box-shadow: 0 5px 5px rgba(0,0,0,.6);
     transition: 0.7s;
-}
-
-#SocialMedia img{
-    width: 50px;
-    height: 50px;
 }

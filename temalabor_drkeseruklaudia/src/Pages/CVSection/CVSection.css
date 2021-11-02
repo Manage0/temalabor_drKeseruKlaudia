@@ -15,12 +15,6 @@
     color:black;
 }
 
-.imgNotWorking{
-    background-image: url('../../Pictures/Temp/introImg.jpg');
-    width: 400px;
-    height: 600px;
-}
-
 #left{
     float: right;
     margin-left: auto;

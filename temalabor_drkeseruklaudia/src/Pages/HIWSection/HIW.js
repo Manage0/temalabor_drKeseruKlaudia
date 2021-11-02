@@ -19,8 +19,8 @@ const HIW = () => {
                 <VerticalTimeline>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
-                        contentStyle={{ background: 'rgb(127, 123, 103)', color: '#fff' }}
-                        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                        contentStyle={{ background: 'rgb(230, 184, 157)', color: '#000' }}
+                        contentArrowStyle={{ borderRight: '7px solid  rgb(230, 184, 157)' }}
                         iconStyle={{ background: 'rgb(196, 153, 88)', color: '#fff' }}
                         icon={<div class="number">1</div>}
                     >
@@ -32,9 +32,9 @@ const HIW = () => {
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
-                        contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                        contentStyle={{ background: 'rgb(230, 184, 157)', color: '#000' }}
+                        contentArrowStyle={{ borderRight: '7px solid  rgb(230, 184, 157)' }}
+                        iconStyle={{ background: 'rgb(196, 153, 88)', color: '#fff' }}
                         icon={<div class="number">2</div>}
                     >
                         <h3 className="vertical-timeline-element-title">Az ügy áttekintése:</h3>
@@ -44,9 +44,9 @@ const HIW = () => {
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
-                        contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                        contentStyle={{ background: 'rgb(230, 184, 157)', color: '#000' }}
+                        contentArrowStyle={{ borderRight: '7px solid  rgb(230, 184, 157)' }}
+                        iconStyle={{ background: 'rgb(196, 153, 88)', color: '#fff' }}
                         icon={<div class="number">3</div>}
                     >
                         <h3 className="vertical-timeline-element-title">Stratégia:</h3>
@@ -56,9 +56,9 @@ const HIW = () => {
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
-                        contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                        contentStyle={{ background: 'rgb(230, 184, 157)', color: '#000' }}
+                        contentArrowStyle={{ borderRight: '7px solid  rgb(230, 184, 157)' }}
+                        iconStyle={{ background: 'rgb(196, 153, 88)', color: '#fff' }}
                         icon={<div class="number">4</div>}
                     >
                         <h3 className="vertical-timeline-element-title">Kivitelezés: </h3>
@@ -70,9 +70,9 @@ const HIW = () => {
                 <VerticalTimeline>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
-                        contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                        contentStyle={{ background: 'rgb(230, 184, 157)', color: '#000' }}
+                        contentArrowStyle={{ borderRight: '7px solid  rgb(230, 184, 157)' }}
+                        iconStyle={{ background: 'rgb(196, 153, 88)', color: '#fff' }}
                         icon={<div class="number">1</div>}
                     >
                         <h3 className="vertical-timeline-element-title">Terminvereinbarung:</h3>
@@ -83,9 +83,9 @@ const HIW = () => {
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
-                        contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                        contentStyle={{ background: 'rgb(230, 184, 157)', color: '#000' }}
+                        contentArrowStyle={{ borderRight: '7px solid  rgb(230, 184, 157)' }}
+                        iconStyle={{ background: 'rgb(196, 153, 88)', color: '#fff' }}
                         icon={<div class="number">2</div>}
                     >
                         <h3 className="vertical-timeline-element-title">Überblick der Sache:</h3>
@@ -94,9 +94,9 @@ const HIW = () => {
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
-                        contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                        contentStyle={{ background: 'rgb(230, 184, 157)', color: '#000' }}
+                        contentArrowStyle={{ borderRight: '7px solid  rgb(230, 184, 157)' }}
+                        iconStyle={{ background: 'rgb(196, 153, 88)', color: '#fff' }}
                         icon={<div class="number">3</div>}
                     >
                         <h3 className="vertical-timeline-element-title">Strategie:</h3>
@@ -105,9 +105,9 @@ const HIW = () => {
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
-                        contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                        contentStyle={{ background: 'rgb(230, 184, 157)', color: '#000' }}
+                        contentArrowStyle={{ borderRight: '7px solid  rgb(230, 184, 157)' }}
+                        iconStyle={{ background: 'rgb(196, 153, 88)', color: '#fff' }}
                         icon={<div class="number">4</div>}
                     >
                         <h3 className="vertical-timeline-element-title">Ausführung:  </h3>
