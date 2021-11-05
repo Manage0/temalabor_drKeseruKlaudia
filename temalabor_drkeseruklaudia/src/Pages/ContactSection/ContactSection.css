@@ -10,7 +10,8 @@
 }
 
 label{
-    display: none;
+    display: flex;
+    /*should be none*/
 }
 
 #formTD{
