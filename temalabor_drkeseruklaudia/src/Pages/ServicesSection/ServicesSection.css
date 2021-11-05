@@ -50,11 +50,17 @@
     #ServicesGrid{
         grid-template-columns: repeat(1,auto);
         grid-template-rows: repeat(8, auto);
-        font-size: 4vw;
+        font-size: 4.8vw;
+    }
+
+    .ServicesHeader{
+        font-size: 5.5vw;
     }
 
     .elementTitle{
-        font-size: 4.7vw;
+        font-weight: normal;
+        font-style:normal;
+        font-size: 4vw;
     }
 
 }

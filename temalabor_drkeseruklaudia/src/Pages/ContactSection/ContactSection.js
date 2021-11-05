@@ -2,7 +2,7 @@ import './ContactSection.css'
 import { useState } from 'react'
 import axios from 'axios'
 import { useLang } from '../../Contexts/LangContext'
-import {AiOutlineFacebook} from 'react-icons/ai'
+import { AiOutlineFacebook } from 'react-icons/ai'
 
 const ContactSection = () => {
 
@@ -110,43 +110,34 @@ const ContactSection = () => {
                         <div class="ContactText">
                             <div id="SocialMedia">
                                 <a href="https://www.facebook.com/dr.keseru.klaudia" target="_blank">
-                                    <AiOutlineFacebook size={70}/>
+                                    <AiOutlineFacebook size={70} />
                                 </a>
                             </div>
                         </div>
                     </td>
                     <td id="formTD">
-                        {lang === "hun" ?
-                            <div id="formDiv">
-                                <div id="FormTitle">
-                                    Ügyvédre van szüksége?
-                                </div>
-                                <input type="text" class="input" placeholder="Adja meg a teljes nevét!" onChange={(e) => NameSet(e.target.value)} />
-                                <br />
-                                <input type="text" class="input" placeholder="Adja meg a telefonszámát!" onChange={(e) => PhoneSet(e.target.value)} />
-                                <br />
-                                <input type="text" class="input" placeholder="Adja meg az e-mail címét!" onChange={(e) => EmailSet(e.target.value)} />
-                                <br />
-                                <textarea class="input" id="description" placeholder="Írja le röviden kérdését! (max. 200 karakter)" maxLength="200" rows="8" onChange={(e) => CaseSet(e.target.value)} />
-                                <div id="btn-pos">
-                                    <button id="button" onClick={Send}>{sendTitle}</button>
-                                </div>
-                            </div> :
-                            <div id="formDiv">
-                                <div id="FormTitle">
-                                    Brauchen Sie einen Anwalt?
-                                </div>
-                                <input type="text" class="input" placeholder="Bitte geben Sie Ihren vollen Namen ein!" onChange={(e) => NameSet(e.target.value)} />
-                                <br />
-                                <input type="text" class="input" placeholder="Bitte geben Sie Ihre Telefonnummer ein!" onChange={(e) => PhoneSet(e.target.value)} />
-                                <br />
-                                <input type="text" class="input" placeholder="Bitte geben Sie Ihre E-mail Adresse ein!" onChange={(e) => EmailSet(e.target.value)} />
-                                <br />
-                                <textarea class="input" id="description" placeholder="Bitte beschreiben Sie Ihre Frage  kurz! (max. 200 karakter)" maxLength="200" rows="8" onChange={(e) => CaseSet(e.target.value)} />
-                                <div id="btn-pos">
-                                    <button id="button" onClick={Send}>{sendTitle}</button>
-                                </div>
-                            </div>}
+                        <form name="contact" method="post" data-netlify="true" onSubmit="submit">
+                            <input type="hidden" name="form-name" value="contact" />
+                            <div id="FormTitle">
+                                {lang === "hun" ? "Ügyvédre van szüksége?" : "Brauchen Sie einen Anwalt?"}
+                            </div>
+                            <div>
+                                <label>Name</label>
+                                <input type="text" class="input" placeholder={lang === "hun" ? "Adja meg a teljes nevét!" : "Bitte geben Sie Ihren vollen Namen ein!"} onChange={(e) => NameSet(e.target.value)} />
+                            </div>
+                            <div>
+                                <label>Phone number</label>
+                                <input type="text" class="input" placeholder={lang === "hun" ? "Adja meg a telefonszámát!" : "Bitte geben Sie Ihre Telefonnummer ein!"} onChange={(e) => PhoneSet(e.target.value)} />
+                            </div>
+                            <div>
+                                <label>E-mail</label>
+                                <input type="text" class="input" placeholder={lang === "hun" ? "Adja meg az e-mail címét!" : "Bitte geben Sie Ihre E-mail Adresse ein!"} onChange={(e) => EmailSet(e.target.value)} />
+                            </div>
+                            <textarea class="input" id="description" placeholder={lang === "hun" ? "Írja le röviden kérdését! (max. 200 karakter)" : "Bitte beschreiben Sie Ihre Frage  kurz! (max. 200 Charakter)"} maxLength="200" rows="8" onChange={(e) => CaseSet(e.target.value)} />
+                            <div id="btn-pos">
+                                <button id="button" type="submit" onClick={Send}>{sendTitle}</button>
+                            </div>
+                        </form>
                     </td>
 
                 </tr>
