@@ -116,24 +116,27 @@ const ContactSection = () => {
                         </div>
                     </td>
                     <td id="formTD">
-                        <form name="contact" method="post" data-netlify="true" onSubmit="submit">
+                        <form name="contact" method="post" data-netlify="true" onSubmit="submit" netlify>
                             <input type="hidden" name="form-name" value="contact" />
                             <div id="FormTitle">
                                 {lang === "hun" ? "Ügyvédre van szüksége?" : "Brauchen Sie einen Anwalt?"}
                             </div>
                             <div>
                                 <label>Name</label>
-                                <input type="text" class="input" placeholder={lang === "hun" ? "Adja meg a teljes nevét!" : "Bitte geben Sie Ihren vollen Namen ein!"} onChange={(e) => NameSet(e.target.value)} />
+                                <input type="text" class="input" name="name" placeholder={lang === "hun" ? "Adja meg a teljes nevét!" : "Bitte geben Sie Ihren vollen Namen ein!"} onChange={(e) => NameSet(e.target.value)} />
                             </div>
                             <div>
                                 <label>Phone number</label>
-                                <input type="text" class="input" placeholder={lang === "hun" ? "Adja meg a telefonszámát!" : "Bitte geben Sie Ihre Telefonnummer ein!"} onChange={(e) => PhoneSet(e.target.value)} />
+                                <input type="text" class="input" name="phone" placeholder={lang === "hun" ? "Adja meg a telefonszámát!" : "Bitte geben Sie Ihre Telefonnummer ein!"} onChange={(e) => PhoneSet(e.target.value)} />
                             </div>
                             <div>
                                 <label>E-mail</label>
-                                <input type="text" class="input" placeholder={lang === "hun" ? "Adja meg az e-mail címét!" : "Bitte geben Sie Ihre E-mail Adresse ein!"} onChange={(e) => EmailSet(e.target.value)} />
+                                <input type="email" class="input" name="email" placeholder={lang === "hun" ? "Adja meg az e-mail címét!" : "Bitte geben Sie Ihre E-mail Adresse ein!"} onChange={(e) => EmailSet(e.target.value)} />
                             </div>
-                            <textarea class="input" id="description" placeholder={lang === "hun" ? "Írja le röviden kérdését! (max. 200 karakter)" : "Bitte beschreiben Sie Ihre Frage  kurz! (max. 200 Charakter)"} maxLength="200" rows="8" onChange={(e) => CaseSet(e.target.value)} />
+                            <div>
+                                <label>Case</label>
+                                <textarea class="input" id="description" name="case" placeholder={lang === "hun" ? "Írja le röviden kérdését! (max. 200 karakter)" : "Bitte beschreiben Sie Ihre Frage  kurz! (max. 200 Charakter)"} maxLength="200" rows="8" onChange={(e) => CaseSet(e.target.value)} />
+                            </div>
                             <div id="btn-pos">
                                 <button id="button" type="submit" onClick={Send}>{sendTitle}</button>
                             </div>
