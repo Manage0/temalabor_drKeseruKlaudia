@@ -23,22 +23,22 @@ function App() {
 
   const Form = () => {
     return (
-      <form name="contact" method="POST" data-netlify="true">
-        <input type="hidden" name="form-name" value="contact"></input>
+      <form name="contact v1" method="POST" data-netlify="true" enctype="application/x-www-form-urlencoded">
+        <input type="hidden" name="form-name" value="contact v1" />
         <p>
-          <label>Your Name: <input type="text" name="name" /></label>
+          <label>Your Name: <input type="text" name="name v1" /></label>
         </p>
         <p>
-          <label>Your Email: <input type="email" name="email" /></label>
+          <label>Your Email: <input type="email" name="email v1" /></label>
         </p>
         <p>
-          <label>Your Role: <select name="role[]" multiple>
+          <label>Your Role: <select name="role v1" multiple>
             <option value="leader">Leader</option>
             <option value="follower">Follower</option>
           </select></label>
         </p>
         <p>
-          <label>Message: <textarea name="message"></textarea></label>
+          <label>Message: <textarea name="message v1"></textarea></label>
         </p>
         <p>
           <button type="submit">Send</button>
