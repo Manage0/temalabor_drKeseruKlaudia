@@ -4,6 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+<form name="contact v1" netlify netlify-honeypot="bot-field" hidden>
+<input type="text" name="name v1" />
+<input type="email" name="email v1" />
+<textarea name="message v1"></textarea>
+</form>
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

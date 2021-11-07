@@ -32,12 +32,6 @@ function App() {
           <label>Your Email: <input type="email" name="email v1" /></label>
         </p>
         <p>
-          <label>Your Role: <select name="role v1" multiple>
-            <option value="leader">Leader</option>
-            <option value="follower">Follower</option>
-          </select></label>
-        </p>
-        <p>
           <label>Message: <textarea name="message v1"></textarea></label>
         </p>
         <p>
