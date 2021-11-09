@@ -21,34 +21,12 @@ function App() {
     SetRender(!render)
   }
 
-  const Form = () => {
-    return (
-      <form name="contact v1" method="POST" data-netlify="true" enctype="application/x-www-form-urlencoded">
-        <input type="hidden" name="form-name" value="contact v1" />
-        <p>
-          <label>Your Name: <input type="text" name="name v1" /></label>
-        </p>
-        <p>
-          <label>Your Email: <input type="email" name="email v1" /></label>
-        </p>
-        <p>
-          <label>Message: <textarea name="message v1"></textarea></label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
-      </form>
-
-    )
-  }
-
   return (
     <div>
       <LangProvider value="hun">
         <Router>
           <Switch>
             <Route exact path="/">
-              <Form />
               <Header />
               <IntroSection />
               <CVSection />
