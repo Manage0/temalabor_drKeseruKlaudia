@@ -117,7 +117,7 @@ const ContactSection = () => {
                     </td>
                     <td id="formTD">
                         <form name="contact" method="POST" data-netlify="true" enctype="application/x-www-form-urlencoded">
-                            <input type="hidden" name="form-name" value="contact v1" />
+                            <input type="hidden" name="form-name" value="contact" />
                             <div id="FormTitle">
                                 {lang === "hun" ? "Ügyvédre van szüksége?" : "Brauchen Sie einen Anwalt?"}
                             </div>
