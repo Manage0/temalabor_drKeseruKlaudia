@@ -6,7 +6,6 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
-    "axios": "^0.23.0",
     "framer-motion": "^4.1.17",
     "i18next": "^21.4.0",
     "react": "^17.0.2",
@@ -18,7 +17,6 @@
     "react-router-hashlink": "^0.6.0",
     "react-scripts": "4.0.3",
     "react-vertical-timeline-component": "^3.5.2",
-    "sass": "^1.43.3",
     "styled-components": "^5.3.3",
     "web-vitals": "^1.1.2"
   },
