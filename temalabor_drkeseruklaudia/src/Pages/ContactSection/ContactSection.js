@@ -1,6 +1,5 @@
 import './ContactSection.css'
 import { useState } from 'react'
-import axios from 'axios'
 import { useLang } from '../../Contexts/LangContext'
 import { AiOutlineFacebook } from 'react-icons/ai'
 
@@ -51,15 +50,6 @@ const ContactSection = () => {
             try {
                 let dataString = name + " " + phone + " " + Case + " " + email
                 setSendTitle("Küldés...")
-                await axios.post('https://fast-beyond-73098.herokuapp.com/https://gentle-dusk-91583.herokuapp.com/sendmail', {
-                    name: name,
-                    phone: phone,
-                    Case: Case,
-                    email: email
-                })
-                    .then(response => {
-                        setSendTitle(response.data.answer)
-                    })
             } catch (Error) {
                 setSendTitle("Hiba! Kérem jelezze a jkbbenedek@gmail.com címen!")
             }

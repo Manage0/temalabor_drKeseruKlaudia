@@ -8,7 +8,7 @@ const MenuItems =[
     {
         title:'Szakterületeim',
         titledeu:'Fachbereiche',
-        url:'/szakteruletek',
+        url:'/#areasOfExpertise',
         cName:'nav-links'
     },
     {
@@ -31,11 +31,11 @@ const MenuItems =[
     },
     {
         title:'Hun',
-        cName:'nav-btn'
+        cName:'lang-btn'
     },
     {
         title:'Ger',
-        cName:'nav-btn'
+        cName:'lang-btn'
     },
 ]
 

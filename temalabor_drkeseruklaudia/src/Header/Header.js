@@ -1,88 +1,58 @@
 import "./Header.css"
-import React, { useEffect, useState, useContext } from 'react'
+import React, { useState } from 'react'
 import { MenuItems } from './MenuItems'
-import { LangContext, useLang } from "../Contexts/LangContext"
+import { useLang } from "../Contexts/LangContext"
 import { HashLink as Link } from "react-router-hash-link"
 import { FaBars } from 'react-icons/fa'
 import { AiFillCloseCircle } from 'react-icons/ai'
 
 
-const Header = (fun) => {
-
-    //bővítés a többi elemmel
+const Header = () => {
 
     const [lang, setLangHun, setLangDeu] = useLang(useLang);
 
     const [clicked, setClicked] = useState(false)
 
-    const ClickSet = () => {
-        setClicked(!clicked)
-    }
-
-    const Deu = () => {
-        setLangDeu()
-    }
-
-    const Hun = () => {
-        setLangHun()
-    }
-
-    const [url, setURL] = useState()
-
-    useEffect(() => {
-        if (window.location.href != url) {
-            setClicked(false)
-            setURL(window.location.href)
-        }
-    })
-
-    /*
-
-                    <i class="fas fa-gavel" id="gavel"></i>
-                {lang==="hun"
-                ?
-                <span>dr. Keserű Klaudia</span>
-                :
-                <span>dr. Klaudia Keserű</span>}
-    */
-
     return (
-        <div id="HeaderBG">
-            <nav className="NavbarItems">
-                <h1 className="Navbar-logo">
-                    <Link to="/"><img src="Images/Logo.webp" alt="logo" id="logo" /></Link>
-                </h1>
-                <div className="menu-icon" onClick={ClickSet}>
-                    {clicked ? <AiFillCloseCircle /> : <FaBars />}
-                </div>
-                <ul className={clicked ? 'nav-menu active' : 'nav-menu'}>
-                    {MenuItems.map((item, index) => {
-                        return (
-                            <li key={index}>
-                                {
-                                    item.cName === 'nav-links'
+        <nav className="NavbarItems">
+            <h1>
+                <Link to="/"><img src="Images/Logo.webp" alt="logo" id="logo" /></Link>
+            </h1>
+            <div className="menu-icon" onClick={()=>setClicked(!clicked)}>
+                {clicked ? <AiFillCloseCircle /> : <FaBars />}
+            </div>
+            <ul className={clicked ? 'nav-menu active' : 'nav-menu'}>
+                {MenuItems.map((item, index) => {
+                    return (
+                        <li key={index}>
+                            {
+                                item.cName === 'nav-links'
+                                ?
+                                <Link className={item.cName} to={item.url}>                                        
+                                    {
+                                        lang === "hun"
                                         ?
-                                        <Link className={item.cName} to={item.url}>
-                                            {lang === "hun"
-                                                ?
-                                                <span>{item.title}</span>
-                                                :
-                                                <span>{item.titledeu}</span>}
-                                        </Link>
+                                        <span>{item.title}</span>
                                         :
+                                        <span>{item.titledeu}</span>
+                                    }
+                                </Link>
+                                :
+                                <div class="lang-div">
+                                    {
                                         item.title === 'Hun'
-                                            ?
-                                            <img class={item.cName} src="Images/Flags/hunFlag.png" alt="hun" onClick={Hun} />
-                                            :
-                                            <img className={item.cName} id="ger" src="Images/Flags/gerFlag.png" alt="ger" onClick={Deu} />
-                                }
-                            </li>
-                        )
-                    })}
-                </ul>
-            </nav>
-        </div>
-
+                                        ?
+                                        <img class={item.cName} src="Images/Flags/hunFlag.png" alt="hun" onClick={()=>setLangHun()}/>
+                                        :
+                                        <img className={item.cName} src="Images/Flags/gerFlag.png" alt="ger" onClick={()=>setLangDeu()}/>
+                                    }
+                                </div>
+                            }
+                        </li>
+                    )
+                })}
+            </ul>
+        </nav>
     )
 }
 
