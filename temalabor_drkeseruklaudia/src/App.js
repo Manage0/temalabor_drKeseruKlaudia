@@ -1,14 +1,14 @@
 import './App.css';
 import Header from './Header/Header';
-import IntroSection from './Pages/IntroSection/IntroSection';
-import CVSection from './Pages/CVSection/CVSection';
-import ServicesSection from './Pages/ServicesSection/ServicesSection';
-import HIW from './Pages/HIWSection/HIW';
-import ContactSection from './Pages/ContactSection/ContactSection';
+import IntroSection from './Components/IntroSection/IntroSection';
+import CVSection from './Components/CVSection/CVSection';
+import ServicesSection from './Components/ServicesSection/ServicesSection';
+import HIW from './Components/HIWSection/HIW';
+import ContactSection from './Components/Contact/ContactSection';
 import React, { useState } from 'react';
 import { LangContext, LangProvider } from './Contexts/LangContext';
-import Price from './Pages/Price/PriceSection';
-import ImpSec from './Pages/ImpSection/ImpSec';
+import Price from './Components/Price/PriceSection';
+import ImpSec from './Components/ImpSection/ImpSec';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
 
 function App() {

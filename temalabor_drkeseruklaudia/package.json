@@ -13,8 +13,6 @@
     "react-icons": "^4.3.1",
     "react-router": "^5.2.1",
     "react-router-dom": "^5.3.0",
-    "react-router-hash-link": "^2.4.3",
-    "react-router-hashlink": "^0.6.0",
     "react-scripts": "4.0.3",
     "react-vertical-timeline-component": "^3.5.2",
     "styled-components": "^5.3.3",

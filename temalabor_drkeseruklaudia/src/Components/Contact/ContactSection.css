@@ -1,17 +1,12 @@
+/*should be ready, but need to refactor the .js next to it*/
+
 #Contact{
     background: rgb(255,255,255);
     background: -moz-linear-gradient(180deg, rgba(222,207,198,1) 0%, rgba(230,184,157,1) 100%);
     background: -webkit-linear-gradient(180deg, rgba(222,207,198,1) 0%, rgba(230,184,157,1) 100%);
     background: linear-gradient(180deg, rgba(222,207,198,1) 0%, rgba(230,184,157,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#decfc6",endColorstr="#e6b89d",GradientType=1);      
-    
-    padding-top: 70px;
-    padding-bottom: 70px;
-}
-
-label{
-    display: flex;
-    /*should be none*/
+    padding: 70px 0;
 }
 
 #formTD{
@@ -27,6 +22,9 @@ form{
     padding: 40px;
     border-radius: 15px;
     padding-right: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #ContactTD{
@@ -37,8 +35,7 @@ form{
 .ContactText{
     font-size: larger;
     color: black;
-    padding: 5px;
-    padding-left: 60px;
+    padding: 5px 0;
 }
 
 #ContactTable{
@@ -93,7 +90,7 @@ form{
 }
 
 #btn-pos{
-    align-items: center;
+    /*shouldnt exist*/
     width: 100%;
 }
 
@@ -108,14 +105,10 @@ form{
 
     #formDivMobile{
         display:block;
-        background: rgba(99, 69, 43, 0.397);
+        background: #e6b89d;
         padding: 40px;
         border-radius: 15px;
         padding-right: 90px;
-    }
-
-    #Contact{
-        padding-bottom: 130px;
     }
 }
 
@@ -135,7 +128,6 @@ form{
     overflow: hidden;
     padding: 5px;
     border-radius: 5px;
-    background: rgba(255, 255, 255, .1);
     box-shadow: 0 5px 5px rgba(0,0,0,.6);
-    transition: 0.7s;
+    transition: 0.5s;
 }

@@ -2,31 +2,31 @@ const MenuItems =[
     {
         title:'Rólam',
         titledeu:'Vorstellung',
-        url:'/#CV',
+        url:'#CV',
         cName:'nav-links'
     },
     {
         title:'Szakterületeim',
         titledeu:'Fachbereiche',
-        url:'/#areasOfExpertise',
+        url:'#areasOfExpertise',
         cName:'nav-links'
     },
     {
         title:'Hogyan dolgozom?',
         titledeu:'Wie arbeite ich?',
-        url:'/#HIW',
+        url:'#HIW',
         cName:'nav-links'
     },
     {
         title:'Munkadíj',
         titledeu:'Anwaltshonorar',
-        url:'/#Price',
+        url:'#Price',
         cName:'nav-links'
     },
     {
         title:'Kapcsolat',
         titledeu:'Kontakt',
-        url:'/#Contact',
+        url:'#Contact',
         cName:'nav-links'
     },
     {

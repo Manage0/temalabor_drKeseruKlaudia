@@ -2,7 +2,7 @@ import "./Header.css"
 import React, { useState } from 'react'
 import { MenuItems } from './MenuItems'
 import { useLang } from "../Contexts/LangContext"
-import { HashLink as Link } from "react-router-hash-link"
+import { Link } from "react-router-dom"
 import { FaBars } from 'react-icons/fa'
 import { AiFillCloseCircle } from 'react-icons/ai'
 
@@ -28,7 +28,7 @@ const Header = () => {
                             {
                                 item.cName === 'nav-links'
                                 ?
-                                <Link className={item.cName} to={item.url}>                                        
+                                <a className={item.cName} href={item.url}>                                        
                                     {
                                         lang === "hun"
                                         ?
@@ -36,7 +36,7 @@ const Header = () => {
                                         :
                                         <span>{item.titledeu}</span>
                                     }
-                                </Link>
+                                </a>
                                 :
                                 <div class="lang-div">
                                     {
