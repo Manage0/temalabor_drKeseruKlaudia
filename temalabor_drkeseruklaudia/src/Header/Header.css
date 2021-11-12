@@ -45,13 +45,14 @@
 
 .lang-btn{
     margin: 0 1rem;
+    border-radius: 5px;
 }
 
 .menu-icon{
     display: none;
 }
 
-@media screen and (max-width: 1025px){
+@media screen and (max-width: 1060px){
 
     .lang-div{
         padding: 2rem 0;
