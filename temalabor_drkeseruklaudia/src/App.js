@@ -1,12 +1,12 @@
 import './App.css';
 import Header from './Header/Header';
 import IntroSection from './Components/IntroSection/IntroSection';
-import CVSection from './Components/CVSection/CVSection';
+import CVSection from './Components/Introduction/CVSection';
 import ServicesSection from './Components/ServicesSection/ServicesSection';
 import HIW from './Components/HIWSection/HIW';
-import ContactSection from './Components/Contact/ContactSection';
+import ContactSection from './Components/Contact/Contact';
 import React, { useState } from 'react';
-import { LangContext, LangProvider } from './Contexts/LangContext';
+import { LangProvider } from './Contexts/LangContext';
 import Price from './Components/Price/PriceSection';
 import ImpSec from './Components/ImpSection/ImpSec';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
@@ -14,12 +14,6 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-d
 function App() {
 
   //SEO
-
-  const [render, SetRender] = useState("true")
-
-  function Render() {
-    SetRender(!render)
-  }
 
   return (
     <div>

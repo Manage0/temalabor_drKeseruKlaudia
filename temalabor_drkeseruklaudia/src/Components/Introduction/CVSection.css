@@ -59,14 +59,14 @@
 
     #red_dress_mobile{
         display: block;
-        height: 600px;
+        height: 500px;
         border-radius: 50px;
         padding: 20px;
         margin-left: auto;
         margin-right: auto;
     }
     #right{
-        width:90%;
+        width:60%;
         font-size: 3vw;
     }
     #left{

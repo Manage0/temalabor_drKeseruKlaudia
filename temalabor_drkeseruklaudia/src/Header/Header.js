@@ -15,9 +15,7 @@ const Header = () => {
 
     return (
         <nav className="NavbarItems">
-            <h1>
                 <Link to="/"><img src="Images/Logo.webp" alt="logo" id="logo" /></Link>
-            </h1>
             <div className="menu-icon" onClick={()=>setClicked(!clicked)}>
                 {clicked ? <AiFillCloseCircle /> : <FaBars />}
             </div>
