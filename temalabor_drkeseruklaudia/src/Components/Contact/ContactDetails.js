@@ -40,15 +40,15 @@ const ContactDetails=()=>{
                         9400 Sopron, Színház Str. 21. Stock 1.
                     </div>}
                 <div class="ContactText">
-                    <span class="ContactSubTitle">Telefon: </span><tel>0699/338-250; +3630/683-8822</tel>
+                    <span class="ContactSubTitle">Telefon: </span><a href="tel:0699/338-250">0699/338-250</a>; <a href="tel:+3630/683-8822">+3630/683-8822</a>
                 </div>
                 {lang === "hun" ?
                     <div class="ContactText">
-                        <span class="ContactSubTitle">E-mail: </span>dr.keseru.klaudia@gmail.com
+                        <span class="ContactSubTitle">E-mail: </span><a href="mailto:dr.keseru.klaudia@gmail.com">dr.keseru.klaudia@gmail.com</a>
                     </div>
                     :
                     <div class="ContactText">
-                        <span class="ContactSubTitle">E-mail Adresse: </span>dr.keseru.klaudia@gmail.com
+                        <span class="ContactSubTitle">E-mail Adresse: </span><a href="mailto:dr.keseru.klaudia@gmail.com">dr.keseru.klaudia@gmail.com</a>
                     </div>}
                 <div class="ContactText">
                         <a href="https://www.facebook.com/dr.keseru.klaudia" target="_blank">

@@ -1,3 +1,5 @@
+/*ready??? but font*/
+
 #HIW{
     background: rgb(255,255,255);
     background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(230,184,157,1) 100%);
@@ -6,21 +8,11 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#e6b89d",GradientType=1);     
 }
 
-#title{
+#HIWTitle{
     text-align: center;
     font-size: 3.5vw;
     color: black;
     padding-bottom: 30px;
-}
-
-#flowchartDesktop{
-    display: grid;
-    grid-template-columns: 45% 10% 45%;
-}
-
-.numberNline{
-    text-align: center;
-
 }
 
 .number{
@@ -30,12 +22,7 @@
     width: 60px;
     height: 60px;
     text-align: center;
-    padding: auto 0;
-    line-height: 100%;
-    text-align: center;
-    display: inline-block;
     vertical-align: middle;
-    line-height: normal;
     display: table-cell;
 }
 
