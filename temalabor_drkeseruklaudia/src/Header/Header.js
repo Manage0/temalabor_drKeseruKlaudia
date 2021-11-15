@@ -2,7 +2,6 @@ import "./Header.css"
 import React, { useState } from 'react'
 import { MenuItems } from './MenuItems'
 import { useLang } from "../Contexts/LangContext"
-import { Link } from "react-router-dom"
 import { FaBars } from 'react-icons/fa'
 import { AiFillCloseCircle } from 'react-icons/ai'
 
@@ -13,9 +12,15 @@ const Header = () => {
 
     const [clicked, setClicked] = useState(false)
 
+    const Click =()=>{
+        console.log(window.innerWidth)
+        if(window.innerWidth<1060) 
+            setClicked(!clicked)
+    }
+
     return (
         <nav className="NavbarItems">
-                <Link to="/"><img src="Images/Logo.webp" alt="logo" id="logo" /></Link>
+                <img src="Images/Logo.webp" alt="logo" id="logo" />
             <div className="menu-icon" onClick={()=>setClicked(!clicked)}>
                 {clicked ? <AiFillCloseCircle /> : <FaBars />}
             </div>
@@ -26,7 +31,7 @@ const Header = () => {
                             {
                                 item.cName === 'nav-links'
                                 ?
-                                <a className={item.cName} href={item.url}>                                        
+                                <a className={item.cName} href={item.url} onClick={()=>Click()}>                                        
                                     {
                                         lang === "hun"
                                         ?
