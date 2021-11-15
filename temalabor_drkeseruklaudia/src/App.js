@@ -8,7 +8,7 @@ import ContactSection from './Components/Contact/Contact';
 import React, { useState } from 'react';
 import { LangProvider } from './Contexts/LangContext';
 import Price from './Components/Price/PriceSection';
-import ImpSec from './Components/ImpSection/ImpSec';
+import Impress from './Components/Impress/Impress';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
 
 function App() {
@@ -28,7 +28,7 @@ function App() {
               <HIW />
               <Price />
               <ContactSection />
-              <ImpSec />
+              <Impress />
             </Route>
             <Redirect to="/" />
           </Switch>

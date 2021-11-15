@@ -1,12 +1,9 @@
 #ImpSec{
-    padding: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    color: black;
+    padding: 4% 7% 2% 7%;
+    text-align: justify;
     background: rgb(230,184,157);
     background: -moz-linear-gradient(180deg, rgba(230,184,157,1) 0%, rgba(240,207,187,1) 100%);
     background: -webkit-linear-gradient(180deg, rgba(230,184,157,1) 0%, rgba(240,207,187,1) 100%);
     background: linear-gradient(180deg, rgba(230,184,157,1) 0%, rgba(240,207,187,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e6b89d",endColorstr="#f0cfbb",GradientType=1); 
-
 }

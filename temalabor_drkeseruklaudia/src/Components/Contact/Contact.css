@@ -97,6 +97,10 @@ textarea{
         justify-content:center;
     }
 
+    #ContactTitle{
+        font-size: 20;
+    }
+
     form{
         margin: 0;
         margin-top: 5%;
@@ -107,6 +111,7 @@ textarea{
 
     #ContactDetails{
         width: 100%;
+        padding:0;
     }
 
     #ContactTitle{
