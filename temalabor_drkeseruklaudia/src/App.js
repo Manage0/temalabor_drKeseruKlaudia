@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './Header/Header';
 import IntroSection from './Components/IntroSection/IntroSection';
-import CVSection from './Components/Introduction/CVSection';
+import CVSection from './Components/Introduction/Introduction';
 import ServicesSection from './Components/ServicesSection/ServicesSection';
 import HIW from './Components/HIW/HIW';
 import ContactSection from './Components/Contact/Contact';

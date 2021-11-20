@@ -3,12 +3,28 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+import LanguageDetector from 'i18next-browser-languagedetector'
+import HttpApi from 'i18next-http-backend'
 
-<form name="contact v1" netlify netlify-honeypot="bot-field" hidden>
-<input type="text" name="name v1" />
-<input type="email" name="email v1" />
-<textarea name="message v1"></textarea>
-</form>
+i18n.use(initReactI18next)
+  .use(LanguageDetector)
+  .use(HttpApi)
+  .init({
+
+    supportedLngs: ["hu", "de"],
+    fallbackLng: "hu",
+    detection: {
+      order: ['cookie', 'localStorage', 'htmlTag', 'path', 'subdomain'],
+      caches: ['cookie']
+    },
+    backend: {
+      loadPath: '/assets/locales/{{lng}}/translation.json'
+    },
+    react: { useSuspense: false //should be true
+     }
+  })
 
 ReactDOM.render(
   <React.StrictMode>

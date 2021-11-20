@@ -1,0 +1,44 @@
+#Introduction{
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(230,184,157,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(230,184,157,1) 100%);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(230,184,157,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#e6b89d",GradientType=1);  
+}
+
+.CVHeader{
+    font-size: 60px;
+    text-align: center;
+    height: max-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color:black;
+}
+
+#IntroductionContentWrapper{
+    display: grid;
+    grid-template-columns: repeat(2 auto);
+    grid-template-rows: auto;
+}
+
+#IntroductionContent{
+    width: 50%;
+    padding:2%;
+}
+
+#red_dress{
+    width: 30%;
+    border-radius: 50px;
+}
+
+#red_dress_mobile{
+    display: none;
+}
+
+@media screen and (max-width: 960px){
+    
+    .CVHeader{
+        font-size: 5vw;
+    }
+
+}

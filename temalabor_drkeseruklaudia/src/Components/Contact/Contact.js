@@ -1,5 +1,3 @@
-/*ready */
-
 import './Contact.css'
 import ContactDetails from './ContactDetails'
 import Form from './Form'

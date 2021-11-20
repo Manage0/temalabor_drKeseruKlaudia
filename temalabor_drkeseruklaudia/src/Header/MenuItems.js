@@ -2,7 +2,7 @@ const MenuItems =[
     {
         title:'Rólam',
         titledeu:'Vorstellung',
-        url:'#CV',
+        url:'#Introduction',
         cName:'nav-links'
     },
     {

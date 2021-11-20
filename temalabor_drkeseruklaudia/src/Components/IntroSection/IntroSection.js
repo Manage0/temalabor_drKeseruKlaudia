@@ -2,10 +2,13 @@ import './IntroSection.css'
 import { useEffect, useState, useContext } from 'react'
 import { useLang } from '../../Contexts/LangContext'
 import Header from '../../Header/Header'
+import { initReactI18next, useTranslation } from "react-i18next";
 
 var rerender=true
 
 const IntroSection =()=>{
+    
+    const {t}=useTranslation()
 
     const[rerenderTrigger, setRerender]=useState("true")
 
