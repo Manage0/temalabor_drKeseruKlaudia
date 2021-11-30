@@ -17,18 +17,23 @@
 
 #IntroductionContentWrapper{
     display: grid;
-    grid-template-columns: repeat(2 auto);
+    grid-template-columns: repeat(2, auto);
     grid-template-rows: auto;
+    justify-content: center;
 }
 
 #IntroductionContent{
-    width: 50%;
-    padding:2%;
+    width: 90%;
+    padding:5%;
+    font-size: 1.3em;
+    justify-content: center;
 }
 
 #red_dress{
-    width: 30%;
+    width: 85%;
     border-radius: 50px;
+    align-content: center;
+    justify-content: center;
 }
 
 #red_dress_mobile{
@@ -38,7 +43,22 @@
 @media screen and (max-width: 960px){
     
     .CVHeader{
-        font-size: 5vw;
+        font-size: 45px;
+    }
+
+    #IntroductionContentWrapper{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, auto);
+    }
+
+    #red_dress{
+        margin-left:7.5%;
+    }
+
+    #IntroductionContent{
+        font-size: 1em;
+        text-align: justify;
     }
 
 }

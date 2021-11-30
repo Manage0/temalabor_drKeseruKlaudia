@@ -3,7 +3,7 @@ import { useLang } from '../../Contexts/LangContext'
 import { useState } from "react"
 import { css, keyframes } from "styled-components/macro"
 import { AnimatePresence } from "framer-motion"
-import { GoLaw, MdFamilyRestroom, GrMoney, BsFillPeopleFill } from 'react-icons/all'
+import { GoLaw, MdFamilyRestroom, GrMoney, BsFillPeopleFill, GiHandcuffs,GiPoliceOfficerHead,GiFamilyHouse,FaFileContract } from 'react-icons/all'
 
 const ServicesSection = () => {
 
@@ -38,7 +38,7 @@ const ServicesSection = () => {
                 <div id="ServicesGrid">
                     <div className="card">
                         <div class="elementTitle" onClick={() => setHiddenP(!hiddenP)}>
-                            <GoLaw />{" Polgári jog"}
+                            <GoLaw style={{marginRight:"10px"}}/>{" Polgári jog"}
                         </div>
                         <AnimatePresence initial={false}>
                             {!hiddenP && (
@@ -84,7 +84,7 @@ const ServicesSection = () => {
                     </div>
                     <div className="card">
                         <div class="elementTitle" onClick={() => setHiddenC(!hiddenC)}>
-                            <MdFamilyRestroom/>{" Családi jog"}
+                            <MdFamilyRestroom style={{marginRight:"10px"}}/>{" Családi jog"}
                         </div>
                         <AnimatePresence initial={false}>
                             {!hiddenC && (
@@ -130,7 +130,7 @@ const ServicesSection = () => {
                     </div>
                     <div className="card">
                         <div class="elementTitle" onClick={() => setHiddenG(!hiddenG)}>
-                            <GrMoney/>{" Gazdasági jog"}
+                            <GrMoney style={{marginRight:"10px"}}/>{" Gazdasági jog"}
                         </div>
                         <AnimatePresence initial={false}>
                             {!hiddenG && (
@@ -183,7 +183,7 @@ const ServicesSection = () => {
                     </div>
                     <div className="card">
                         <div class="elementTitle" onClick={() => setHiddenT(!hiddenT)}>
-                            <BsFillPeopleFill/>{ "Társadalmi szervezetek"}
+                            <BsFillPeopleFill style={{marginRight:"10px"}}/>{"Társadalmi szervezetek"}
                         </div>
                         <AnimatePresence initial={false}>
                             {!hiddenT && (
@@ -229,7 +229,7 @@ const ServicesSection = () => {
                     </div>
                     <div className="card">
                         <div class="elementTitle" onClick={() => setHiddenB(!hiddenB)}>
-                            Büntető jog
+                            <GiHandcuffs style={{marginRight:"10px"}}/>Büntető jog
                         </div>
                         <AnimatePresence initial={false}>
                             {!hiddenB && (
@@ -268,7 +268,7 @@ const ServicesSection = () => {
                     </div>
                     <div className="card">
                         <div class="elementTitle" onClick={() => setHiddenS(!hiddenS)}>
-                            Szabálysértési jog
+                        <GiPoliceOfficerHead style={{marginRight:"10px"}}/>Szabálysértési jog
                         </div>
                         <AnimatePresence initial={false}>
                             {!hiddenS && (
@@ -307,7 +307,7 @@ const ServicesSection = () => {
                     </div>
                     <div className="card">
                         <div class="elementTitle" onClick={() => setHiddenI(!hiddenI)}>
-                            Ingatlan ügyek
+                            <GiFamilyHouse style={{marginRight:"10px"}}/>Ingatlan ügyek
                         </div>
                         <AnimatePresence initial={false}>
                             {!hiddenI && (
@@ -367,7 +367,7 @@ const ServicesSection = () => {
                     </div>
                     <div className="card">
                         <div class="elementTitle" onClick={() => setHiddenK(!hiddenK)}>
-                            Követelések érvényesítése
+                            <FaFileContract style={{marginRight:"10px"}}/>Követelések érvényesítése
                         </div>
                         <AnimatePresence initial={false}>
                             {!hiddenK && (
@@ -408,7 +408,7 @@ const ServicesSection = () => {
                 <div id="ServicesGrid">
                     <div className="card">
                         <div class="elementTitle" onClick={() => setHiddenP(!hiddenP)}>
-                            <GoLaw />{" Bürgerliches Recht"}
+                            <GoLaw style={{marginRight:"10px"}}/>{" Bürgerliches Recht"}
                         </div>
                         <AnimatePresence initial={false}>
                             {!hiddenP && (
@@ -454,7 +454,7 @@ const ServicesSection = () => {
                     </div>
                     <div className="card">
                         <div class="elementTitle" onClick={() => setHiddenC(!hiddenC)}>
-                        <MdFamilyRestroom/>{" Familienrecht"}
+                            <MdFamilyRestroom style={{marginRight:"10px"}}/>{" Familienrecht"}
                         </div>
                         <AnimatePresence initial={false}>
                             {!hiddenC && (
@@ -500,7 +500,7 @@ const ServicesSection = () => {
                     </div>
                     <div className="card">
                         <div class="elementTitle" onClick={() => setHiddenG(!hiddenG)}>
-                        <GrMoney/>{" Wirtschaftsrecht"}
+                            <GrMoney style={{marginRight:"10px"}}/>{" Wirtschaftsrecht"}
                         </div>
                         <AnimatePresence initial={false}>
                             {!hiddenG && (
@@ -553,7 +553,7 @@ const ServicesSection = () => {
                     </div>
                     <div className="card">
                         <div class="elementTitle" onClick={() => setHiddenT(!hiddenT)}>
-                        <BsFillPeopleFill/>{ "Gesellschaftliche Organisationen"} 
+                            <BsFillPeopleFill style={{marginRight:"10px"}}/>{"Gesellschaftliche Organisationen"}
                         </div>
                         <AnimatePresence initial={false}>
                             {!hiddenT && (
@@ -599,7 +599,7 @@ const ServicesSection = () => {
                     </div>
                     <div className="card">
                         <div class="elementTitle" onClick={() => setHiddenB(!hiddenB)}>
-                            Strafrecht
+                            <GiHandcuffs style={{marginRight:"10px"}}/>Strafrecht
                         </div>
                         <AnimatePresence initial={false}>
                             {!hiddenB && (
@@ -638,7 +638,7 @@ const ServicesSection = () => {
                     </div>
                     <div className="card">
                         <div class="elementTitle" onClick={() => setHiddenS(!hiddenS)}>
-                            Ordnungswidrigkeitsrecht
+                            <GiPoliceOfficerHead style={{marginRight:"10px"}}/>Ordnungswidrigkeitsrecht
                         </div>
                         <AnimatePresence initial={false}>
                             {!hiddenS && (
@@ -677,7 +677,7 @@ const ServicesSection = () => {
                     </div>
                     <div className="card">
                         <div class="elementTitle" onClick={() => setHiddenI(!hiddenI)}>
-                            Immobilienangelegenheiten
+                        <GiFamilyHouse style={{marginRight:"10px"}}/>Immobilienangelegenheiten
                         </div>
                         <AnimatePresence initial={false}>
                             {!hiddenI && (
@@ -737,7 +737,7 @@ const ServicesSection = () => {
                     </div>
                     <div className="card">
                         <div class="elementTitle" onClick={() => setHiddenK(!hiddenK)}>
-                            Geltendmachung von Forderungen
+                        <FaFileContract style={{marginRight:"10px"}}/>Geltendmachung von Forderungen
                         </div>
                         <AnimatePresence initial={false}>
                             {!hiddenK && (

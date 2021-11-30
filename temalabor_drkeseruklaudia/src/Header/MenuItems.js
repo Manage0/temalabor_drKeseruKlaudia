@@ -1,4 +1,5 @@
 const MenuItems =[
+    //all i18n
     {
         title:'Rólam',
         titledeu:'Vorstellung',

@@ -1,10 +1,11 @@
+import i18next from 'i18next';
 import React, {useState, useContext} from 'react'
 
-const LangContext = React.createContext("hun");
+const LangContext = React.createContext();
 
 export const LangProvider = ({children}) =>{
 
-    const [lang, setLang] = useState("hun");
+    const [lang, setLang] = useState(i18next.language);
 
     const setLangDeu = () => {
         setLang("deu");

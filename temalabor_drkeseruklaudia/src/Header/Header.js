@@ -1,21 +1,36 @@
 import "./Header.css"
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { MenuItems } from './MenuItems'
 import { FaBars } from 'react-icons/fa'
 import { AiFillCloseCircle } from 'react-icons/ai'
 import i18next from "i18next"
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import Fade from 'react-reveal/Fade';
+import { useLang } from "../Contexts/LangContext"
 
 
 const Header = () => {
 
+    /*js.map törlés */
+
+    const [lang, setLangHun, setLangDeu] = useLang()
+
     const [clicked, setClicked] = useState(false)
+    const [trigger,setTrigger]=useState(false)
 
     const Click = () => {
         if (window.innerWidth < 1060)
             setClicked(!clicked)
     }
+
+    useEffect(()=>{
+     if(i18next.language==="hu"){
+         setLangHun()
+     }   
+     if(i18next.language==="de"){
+        setLangDeu()
+     }
+    })
 
     return (
         <Fade top cascade>
@@ -41,7 +56,7 @@ const Header = () => {
                                             }
                                         </AnchorLink>
                                         :
-                                        <div class="lang-div">
+                                        <div class="lang-div" onClick={()=>setTrigger(!trigger)}>
                                             {
                                                 item.title === 'Hun'
                                                     ?
