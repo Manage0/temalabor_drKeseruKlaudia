@@ -91,7 +91,7 @@ textarea{
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: repeat(2, auto);
-        margin: 0 auto;
+        margin: 0 auto; /*doesnt work :(*/
     }
 
     #ContactTitle{
