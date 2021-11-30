@@ -7,7 +7,7 @@ const Price = () => {
 
     return (
         <div id="Price">
-            {lang === "hun" ?
+            {lang === "hu" ?
                 <div id="PriceTitle">
                     Munkadíj
                 </div> :
@@ -18,7 +18,7 @@ const Price = () => {
                 <table>
                     <tr>
                         <td>
-                            {lang==="hun"?
+                            {lang==="hu"?
                             <div id="PriceText">
                                 Az ügyvédi munkadíj szabad megállapodás tárgya, mely függ az ügy jellegétől,  súlyától, bonyolultságától, valamint a munka mennyiségétől. A munkadíj minden esetben óradíjas alapon, fix összegben, meghatározott ügyekben - így pl. adásvételi szerződések szerkesztése, cégalapítás, tartós jogi képviselet ellátása során) százalékban vagy fix összegben kerül meghatározásra.
                             </div>:

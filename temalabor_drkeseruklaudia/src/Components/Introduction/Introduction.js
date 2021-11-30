@@ -13,7 +13,7 @@ const CVSection = () => {
             <div class='CVHeader'>
                 {t("Introduction")}
             </div>
-            {lang === "hun" ?
+            {lang === "hu" ?
                 <div id='IntroductionContentWrapper'>
                     <div id='IntroductionContent'>
                         2014 májusában végeztem a Szegedi Tudományegyetem Állam -és Jogtudományi Kar, nappali tagozatán jogászként cum laude (4,5) minősítéssel.

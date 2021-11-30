@@ -12,7 +12,7 @@ export const LangProvider = ({children}) =>{
     }
 
     const setLangHun = () => {
-        setLang("hun");
+        setLang("hu");
     }
 
     const contextContent = [lang, setLangHun, setLangDeu];

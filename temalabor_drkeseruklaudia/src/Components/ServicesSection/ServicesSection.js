@@ -27,14 +27,14 @@ const ServicesSection = () => {
   `
     return (
         <div id="Services">
-            {lang === "hun" ?
+            {lang === "hu" ?
                 <div class="ServicesHeader">
                     Szakterületeim
                 </div> :
                 <div class="ServicesHeader">
                     Fachbereiche
                 </div>}
-            {lang === "hun" ?
+            {lang === "hu" ?
                 <div id="ServicesGrid">
                     <div className="card">
                         <div class="elementTitle" onClick={() => setHiddenP(!hiddenP)}>

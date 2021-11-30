@@ -24,12 +24,13 @@ const Header = () => {
     }
 
     useEffect(()=>{
+        setTimeout(()=>{
      if(i18next.language==="hu"){
          setLangHun()
      }   
      if(i18next.language==="de"){
         setLangDeu()
-     }
+     }},5)
     })
 
     return (
@@ -41,6 +42,7 @@ const Header = () => {
                 </div>
                 <ul className={clicked ? 'nav-menu active' : 'nav-menu'}>
                     {MenuItems.map((item) => {
+                        console.log(lang)
                         return (
                             <li>
                                 {
@@ -48,7 +50,7 @@ const Header = () => {
                                         ?
                                         <AnchorLink className={item.cName} href={item.url} onClick={() => Click()}>
                                             {
-                                                i18next.language === "hu"
+                                                lang === "hu"
                                                     ?
                                                     <span>{item.title}</span>
                                                     :
