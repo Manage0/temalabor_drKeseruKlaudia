@@ -1,5 +1,6 @@
 import "./PriceSection.css"
 import { useLang } from '../../Contexts/LangContext'
+import {Fade} from 'react-reveal'
 
 const Price = () => {
 
@@ -7,6 +8,7 @@ const Price = () => {
 
     return (
         <div id="Price">
+            <Fade>
             {lang === "hu" ?
                 <div id="PriceTitle">
                     Munkadíj
@@ -33,6 +35,7 @@ const Price = () => {
                 </table>
                 <img id="PriceImgMobile" src="Images/PriceImg.webp" alt="PriceImg" />
             </div>
+            </Fade>
         </div>
     )
 }

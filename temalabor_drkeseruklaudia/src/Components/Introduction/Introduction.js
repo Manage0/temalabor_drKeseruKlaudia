@@ -1,6 +1,7 @@
 import './Introduction.css'
 import { useTranslation } from 'react-i18next';
 import { useLang } from '../../Contexts/LangContext';
+import {Fade} from 'react-reveal'
 
 const CVSection = () => {
 
@@ -10,9 +11,10 @@ const CVSection = () => {
 
     return (
         <div id='Introduction'>
-            <div class='CVHeader'>
+                        <div class='CVHeader'>
                 {t("Introduction")}
             </div>
+            <Fade>
             {lang === "hu" ?
                 <div id='IntroductionContentWrapper'>
                     <div id='IntroductionContent'>
@@ -46,6 +48,7 @@ const CVSection = () => {
                     </div>
                     <img id="red_dress" src="Images/red_dress.webp" alt="red_dress_img" />
                 </div>}
+                </Fade>
         </div>
     )
 }
