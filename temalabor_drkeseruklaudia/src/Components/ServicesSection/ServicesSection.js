@@ -27,7 +27,7 @@ const ServicesSection = () => {
     }
   `
     return (
-        <div id="Services">
+        <div id="areasOfExpertise">
             {lang === "hu" ?
                 <div class="ServicesHeader">
                     Szakterületeim
