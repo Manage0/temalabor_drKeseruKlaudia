@@ -44,6 +44,7 @@ form{
 #ContactTitle{
     font-size: 45px;
     padding-bottom: 15px;
+    font-weight: bold;
 }
 
 .ContactSubTitle{

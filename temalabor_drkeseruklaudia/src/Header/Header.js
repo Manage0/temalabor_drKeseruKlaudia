@@ -16,7 +16,6 @@ const Header = () => {
     const [lang, setLangHun, setLangDeu] = useLang()
 
     const [clicked, setClicked] = useState(false)
-    const [trigger,setTrigger]=useState(false)
 
     const Click = () => {
         if (window.innerWidth < 1060)
@@ -42,7 +41,6 @@ const Header = () => {
                 </div>
                 <ul className={clicked ? 'nav-menu active' : 'nav-menu'}>
                     {MenuItems.map((item) => {
-                        console.log(lang)
                         return (
                             <li>
                                 {
@@ -58,7 +56,7 @@ const Header = () => {
                                             }
                                         </AnchorLink>
                                         :
-                                        <div class="lang-div" onClick={()=>setTrigger(!trigger)}>
+                                        <div class="lang-div">
                                             {
                                                 item.title === 'Hun'
                                                     ?

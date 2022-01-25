@@ -2,6 +2,7 @@
     text-align: center;
     font-size: 3.5vw;
     color: black;
+    font-weight: bold;
     padding-bottom: 30px;
 }
 
@@ -20,14 +21,13 @@
     grid-gap: 5px;
     text-align: left;
     font-size: 1.3vw;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 25%;
+    padding-right: 25%;
 }
 
 .elementTitle{
     font-size: 1.7vw;
     font-weight: bold;
-    font-style: italic;
 }
 
 .card{
@@ -39,6 +39,7 @@
     margin-bottom: 30px;
     box-shadow: 0 1px 2px rgba(0,0,0,0.15);
   transition: box-shadow 0.3s ease-in-out;
+  justify-content: center;
 }
 
 .card:hover{
@@ -51,6 +52,8 @@
         grid-template-columns: repeat(1,auto);
         grid-template-rows: repeat(8, auto);
         font-size: 4.8vw;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     .ServicesHeader{
