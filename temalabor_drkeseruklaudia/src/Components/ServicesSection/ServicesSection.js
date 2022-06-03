@@ -1,14 +1,14 @@
 import './ServicesSection.css'
-import { useLang } from '../../Contexts/LangContext'
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { css, keyframes } from "styled-components/macro"
 import { AnimatePresence } from "framer-motion"
 import Fade from 'react-reveal'
 import { GoLaw, MdFamilyRestroom, GrMoney, BsFillPeopleFill, GiHandcuffs, GiPoliceOfficerHead, GiFamilyHouse, FaFileContract } from 'react-icons/all'
+import i18next from 'i18next'
+import { useLang } from '../../Contexts/tContext'
 
 const ServicesSection = () => {
 
-    const [lang] = useLang(useLang)
     const [hiddenP, setHiddenP] = useState(true)
     const [hiddenC, setHiddenC] = useState(true)
     const [hiddenG, setHiddenG] = useState(true)
@@ -26,9 +26,21 @@ const ServicesSection = () => {
       transform: translateY(0px);
     }
   `
+  const {t, sett}=useLang()
+
+  const [trigger, settrigger] = useState(false);
+  const [archt, setarcht] =useState(!trigger)
+
+  useEffect(()=>{
+      if(archt!==trigger){
+        setarcht(trigger)
+        settrigger(!trigger)
+      }
+},[t, trigger])
+
     return (
         <div id="areasOfExpertise">
-            {lang === "hu" ?
+            {i18next.language === "hu" ?
                 <div class="ServicesHeader">
                     Szakterületeim
                 </div> :
@@ -36,7 +48,7 @@ const ServicesSection = () => {
                     Fachbereiche
                 </div>}
             <Fade>
-                {lang === "hu" ?
+                {i18next.language === "hu" ?
                     <div id="ServicesGrid">
                         <div className="card">
                             <div class="elementTitle" onClick={() => setHiddenP(!hiddenP)}>

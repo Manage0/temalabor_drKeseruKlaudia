@@ -1,0 +1,56 @@
+unixino igények:
+-440000 br.
+-céges gép
+
+currently waiting for:
+-contact data
+-language pack
+
+today:
+
+
+next:
+-add expiration, takarítsunk DB-t, email alapján, redux, kód alapján
+
+
+
+https://addons.mozilla.org/hu/firefox/addon/react-devtools/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search
+use classname instead of class
+Remove fragment??
+ES 7 React/Redux...  VS Code "rafce"
+
+or normal stylesheet
+style ={
+marginTop:"10px"
+}
+
+style passable, ha csak egy dologban különbözik, de akkor nem sima a stylesheet
+
+mapnél kell key
+
+setTasks([...tasks,{}]
+
+ tasks.filter((task)=>task.id!==id)
+settasks{
+ tasks.map((task)=>
+task.id===id?{...task, reminder:!task.reminder}:task))
+}
+
+<div classame={`task ${task.reminder? 'reminder' : ''}`}>
+
+ form like things should be forms...
+
+remove errors from console
+
+input onchange={(e)=>{setReminder(e.currentTarget.checked)}
+input checked={reminder} lehet value is?
+
+onsubmit legyen, benne e.preventDefault() -> nem dob pagere
+formban nem elég a required, legyen frontenden validalas
+Clear the form, value=text, és emellett lehet placeholder is
+
+nem kell mindig a data csak
+
+comp = {id:doc.id,...doc.data()}
+
+bool&&<component>

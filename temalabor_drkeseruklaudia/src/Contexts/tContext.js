@@ -5,17 +5,9 @@ const LangContext = React.createContext();
 
 export const LangProvider = ({children}) =>{
 
-    const [lang, setLang] = useState(i18next.language);
+    const [t, sett] = useState(true)
 
-    const setLangDeu = () => {
-        setLang("deu");
-    }
-
-    const setLangHun = () => {
-        setLang("hu");
-    }
-
-    const contextContent = [lang, setLangHun, setLangDeu];
+    const contextContent = {t,sett};
     
     return <LangContext.Provider value={contextContent}>{children}</LangContext.Provider>;
 }

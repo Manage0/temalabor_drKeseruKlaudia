@@ -1,15 +1,26 @@
 import "./PriceSection.css"
-import { useLang } from '../../Contexts/LangContext'
 import {Fade} from 'react-reveal'
+import i18next from "i18next"
+import { useLang } from "../../Contexts/tContext"
+import { useEffect, useState } from "react"
 
 const Price = () => {
 
-    const [lang] = useLang(useLang);
+    const {t, sett}=useLang()
+    const [trigger, settrigger] = useState(false);
+    const [archt, setarcht] =useState(!trigger)
+  
+    useEffect(()=>{
+        if(archt!==trigger){
+          setarcht(trigger)
+          settrigger(!trigger)
+        }
+  },[t, trigger])
 
     return (
         <div id="Price">
             <Fade>
-            {lang === "hu" ?
+            {i18next.language === "hu" ?
                 <div id="PriceTitle">
                     Munkadíj
                 </div> :
@@ -20,7 +31,7 @@ const Price = () => {
                 <table>
                     <tr>
                         <td>
-                            {lang==="hu"?
+                            {i18next.language==="hu"?
                             <div id="PriceText">
                                 Az ügyvédi munkadíj szabad megállapodás tárgya, mely függ az ügy jellegétől,  súlyától, bonyolultságától, valamint a munka mennyiségétől. A munkadíj minden esetben óradíjas alapon, fix összegben, meghatározott ügyekben - így pl. adásvételi szerződések szerkesztése, cégalapítás, tartós jogi képviselet ellátása során) százalékban vagy fix összegben kerül meghatározásra.
                             </div>:
