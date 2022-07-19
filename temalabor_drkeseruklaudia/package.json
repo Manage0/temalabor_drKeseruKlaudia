@@ -1,6 +1,6 @@
 {
   "name": "temalabor_drkeseruklaudia",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -18,7 +18,7 @@
     "react-reveal": "^1.2.2",
     "react-router": "^5.3.3",
     "react-router-dom": "^5.3.3",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^5.0.1",
     "react-vertical-timeline-component": "^3.5.2",
     "styled-components": "^5.3.5",
     "web-vitals": "^1.1.2"

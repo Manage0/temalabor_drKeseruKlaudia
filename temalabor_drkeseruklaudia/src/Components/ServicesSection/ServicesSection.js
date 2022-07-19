@@ -3,7 +3,12 @@ import { useState, useEffect } from "react"
 import { css, keyframes } from "styled-components/macro"
 import { AnimatePresence } from "framer-motion"
 import Fade from 'react-reveal'
-import { GoLaw, MdFamilyRestroom, GrMoney, BsFillPeopleFill, GiHandcuffs, GiPoliceOfficerHead, GiFamilyHouse, FaFileContract } from 'react-icons/all'
+import { GoLaw } from 'react-icons/go'
+import { GrMoney } from 'react-icons/gr'
+import { MdFamilyRestroom } from 'react-icons/md'
+import { BsFillPeopleFill } from 'react-icons/bs'
+import { GiHandcuffs, GiPoliceOfficerHead, GiFamilyHouse } from 'react-icons/gi'
+import {FaFileContract} from 'react-icons/fa'
 import i18next from 'i18next'
 import { useLang } from '../../Contexts/tContext'
 
