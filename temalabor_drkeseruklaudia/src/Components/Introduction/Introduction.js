@@ -3,6 +3,8 @@ import { useTranslation } from 'react-i18next';
 import { Fade } from 'react-reveal'
 import i18next from 'i18next';
 
+//finom megjegyzés, hogy itt is a .map-ektől meg kellene szabadulni
+
 const CVSection = () => {
 
     const { t } = useTranslation();
@@ -28,7 +30,7 @@ const CVSection = () => {
                             <br /><br />
                             Ügyvédi tevékenységem végzése során fontosnak tartom a gyors és hatékony munkavégzést, a rám bízott feladatok legnagyobb gondossággal történő ellátását és megoldását. Mindezt az ügyek lényegi feltérképezésével, jó kommunikációs, kapcsolatteremtési és problémamegoldó képességemmel biztosítom Ügyfeleim részére.
                         </div>
-                        <img id="red_dress" src="Images/red_dress.webp" alt="red_dress_img" />
+                        <img id="red_dress" src="Images/red_dress_resized.webp" alt="red_dress_img" />
                     </div> :
                     <div id='IntroductionContentWrapper'>
                         <div id='IntroductionContent'>
@@ -44,7 +46,7 @@ const CVSection = () => {
                             <br /><br />
                             Während der Ausübung meiner Anwaltstätigkeit halte ich die schnelle und effektive Arbeit, die Erfüllung und Lösung der mir anvertrauten Aufgaben mit größter Sorgfalt für wichtig. Dies kann ich meinen Mandanten durch die Erfassung der Sache, anhand meiner guten Kommunikations-, Kontakt- und Problemlösungsfähigkeiten gewährleisten.
                         </div>
-                        <img id="red_dress" src="Images/red_dress.webp" alt="red_dress_img" />
+                        <img id="red_dress" src="Images/red_dress_resized.webp" alt="red_dress_img" />
                     </div>}
             </Fade>
         </div>
